@@ -1,0 +1,37 @@
+plugins {
+  id 'java'
+  id 'application'
+}
+
+group 'buzz.getcoco.iot.sample'
+version '1.0-SNAPSHOT'
+mainClassName = 'buzz.getcoco.iot.sample.Main'
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation 'com.google.code.gson:gson:2.8.9'
+  implementation 'buzz.getcoco:cococlientsdk-java:0.22.2'
+
+  implementation 'org.slf4j:slf4j-nop:1.7.33'
+
+  implementation platform('ai.djl:bom:0.15.0')
+
+  implementation 'ai.djl:api'
+  implementation 'ai.djl:basicdataset'
+  implementation 'ai.djl:model-zoo'
+
+  implementation 'ai.djl.mxnet:mxnet-model-zoo'
+  implementation 'ai.djl.mxnet:mxnet-engine'
+
+  implementation 'ai.djl.pytorch:pytorch-engine'
+
+  testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
+  testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+}
+
+test {
+  useJUnitPlatform()
+}
