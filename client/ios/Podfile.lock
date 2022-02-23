@@ -1,0 +1,33 @@
+PODS:
+  - AppAuth (1.1.0):
+    - AppAuth/Core (= 1.1.0)
+    - AppAuth/ExternalUserAgent (= 1.1.0)
+  - AppAuth/Core (1.1.0)
+  - AppAuth/ExternalUserAgent (1.1.0)
+  - JWTDecode (2.6.3)
+
+DEPENDENCIES:
+  - AppAuth (from `https://github.com/shrinivas-elear/AppAuth-iOS.git`, branch `ios13beta`)
+  - JWTDecode (~> 2.4)
+
+SPEC REPOS:
+  trunk:
+    - JWTDecode
+
+EXTERNAL SOURCES:
+  AppAuth:
+    :branch: ios13beta
+    :git: https://github.com/shrinivas-elear/AppAuth-iOS.git
+
+CHECKOUT OPTIONS:
+  AppAuth:
+    :commit: 01c5f557cc7d4234c6987c3f3e1d67c96b28463f
+    :git: https://github.com/shrinivas-elear/AppAuth-iOS.git
+
+SPEC CHECKSUMS:
+  AppAuth: a08c77b389d259e1dd343010352dde2c0c5df689
+  JWTDecode: 33e5e26e5ddbd21b2065820894c08fef0cad9509
+
+PODFILE CHECKSUM: 051d72471d26967eb7833b0f8b99cfe69ab73258
+
+COCOAPODS: 1.11.2

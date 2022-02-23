@@ -1,0 +1,17 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name CocoOAuthFramework
+import AppAuth
+@_exported import CocoOAuthFramework
+import JWTDecode
+import Swift
+import UIKit
+@objc public class CocoAppAuth : ObjectiveC.NSObject {
+  public init(clientId: Swift.String, redirectUri: Swift.String, onSuccess: @escaping (Swift.String?) -> Swift.Void, userData: @escaping ([Swift.AnyHashable : Any]?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension CocoAppAuth : AppAuth.OIDAuthStateChangeDelegate, AppAuth.OIDAuthStateErrorDelegate {
+  @objc dynamic public func didChange(_ state: AppAuth.OIDAuthState)
+  @objc dynamic public func authState(_ state: AppAuth.OIDAuthState, didEncounterAuthorizationError error: Swift.Error)
+}

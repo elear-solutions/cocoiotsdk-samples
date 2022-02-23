@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'IoTSample-App' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IoTSample-App
+  pod 'AppAuth', :git => 'https://github.com/shrinivas-elear/AppAuth-iOS.git', :branch => 'ios13beta'
+  pod 'JWTDecode', '~> 2.4'
+
+  target 'IoTSample-AppTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'IoTSample-AppUITests' do
+    # Pods for testing
+  end
+
+end
