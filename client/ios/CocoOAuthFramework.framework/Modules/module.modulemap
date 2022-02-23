@@ -1,0 +1,11 @@
+framework module CocoOAuthFramework {
+  umbrella header "CocoOAuthFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module CocoOAuthFramework.Swift {
+    header "CocoOAuthFramework-Swift.h"
+    requires objc
+}

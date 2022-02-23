@@ -1,0 +1,1457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00702A1720D69F63A1DDE209B77618C1 /* JWTDecode.swift in Sources */ = {isa = PBXBuildFile; fileRef = C963253E6A82180FB430C6D3DF60B673 /* JWTDecode.swift */; };
+		0212F80E4831291F06CA639E7F5667BF /* OIDServiceDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 7734520C134525AC1AEB09E5CB0394DC /* OIDServiceDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		083B6CE6AFFE0FFB097261E21D7FD12A /* OIDScopes.m in Sources */ = {isa = PBXBuildFile; fileRef = 66CBBABE4CC58D9E0F7922E2FF043450 /* OIDScopes.m */; };
+		0A4FCFA980C22C12F8CA2E380B62A7E4 /* OIDURLQueryComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 8517ED5070901A5937F878FC02002BAB /* OIDURLQueryComponent.m */; };
+		0C6DD7DB43CC9E00F9C3A1BF5FC94166 /* JWTDecode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9866E1979709DE82DE1DCEBC6E13103 /* JWTDecode-dummy.m */; };
+		0E5349F2F5424146C42FF8BFCF7A3564 /* OIDEndSessionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = F26072831483387F8CC32F19F2C23E75 /* OIDEndSessionRequest.m */; };
+		137264A2C33A98F7A2DE66BF763D8F3B /* Pods-IoTSample-AppTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3D68273875BBB77F78FAEEB3A79BAE /* Pods-IoTSample-AppTests-dummy.m */; };
+		140AB7971E21381A99DDAE9C56BDFE29 /* OIDGrantTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 127CA7B0EF88E5D4CF7115A2950F37C7 /* OIDGrantTypes.m */; };
+		14BC0961238FD037B997290DEF5AD588 /* OIDTokenResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 9368AE23194A71EFA1960FB1BBE300CE /* OIDTokenResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19C5D640929EAE465A0433990DE5FBF3 /* OIDClientMetadataParameters.h in Headers */ = {isa = PBXBuildFile; fileRef = 05E75B073125E28C172390EE417F28C1 /* OIDClientMetadataParameters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1B3C9F60C3DDEBE912F8FB659A44B122 /* OIDError.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D1CB008745AD3F7D2263C89991976E /* OIDError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C5486689211E3574DE7BB55EAF6DE36 /* OIDAuthorizationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = A159E046F1AA89D7B00EB44CE37758B1 /* OIDAuthorizationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FCEA3850F5D005A8C4033EF740C537E /* OIDDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 488A2E2B385B3380DA4593939EE648F2 /* OIDDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21CC0C2173C307C3A5C5D3B2CF6ABFD7 /* OIDAuthStateChangeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = D7435ED200F248EA4896A52F3C0E551C /* OIDAuthStateChangeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22B5E7765702376F6F0B685BE37BEEC3 /* OIDTokenResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = B3EBEA0063CD9B2136BBCC251BEEC99F /* OIDTokenResponse.m */; };
+		22EDD4F40F43D8EA4DF3FFB47BF73ECA /* OIDAuthState.m in Sources */ = {isa = PBXBuildFile; fileRef = F167DF4D6834BC070829BE85D20784CD /* OIDAuthState.m */; };
+		2E3B7503FDD885EF57AD41875CC6AF96 /* OIDAuthState+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BC485C87BFD1553A5E1EBA43A858FA /* OIDAuthState+IOS.m */; };
+		32615FDDBA9B3EE9D4636A71F5ACADD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
+		377F69004EB7C350B41EF6DA3CE39946 /* TokenValidators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D82B3646996E6C5FC51022710A47B8CA /* TokenValidators.swift */; };
+		3898FDAF04E5A051B43EEDC77722D379 /* A0JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8DFA3DB480B3736830282BA5915C634 /* A0JWT.swift */; };
+		3C4EE897521356A16C065E9C405E407D /* OIDFieldMapping.h in Headers */ = {isa = PBXBuildFile; fileRef = D4966B2A7A07676DFCB25B20D0019382 /* OIDFieldMapping.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D8A8369C220032A1E0E4D5C9AE88D29 /* OIDRegistrationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 1B3468B9004AEAF3192F8CD3BBA5725E /* OIDRegistrationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E4C5F302D03A3D001A9896FC985DBF2 /* OIDAuthorizationService.h in Headers */ = {isa = PBXBuildFile; fileRef = 8919E07BC426450BA323F80545570E0C /* OIDAuthorizationService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4015CCD2E156BA2D9CCFA763962ED98C /* OIDAuthState.h in Headers */ = {isa = PBXBuildFile; fileRef = AE825E87156CD37880F1E42576141BF1 /* OIDAuthState.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D357A613F29551ED6EC35DCA957E2E2 /* OIDAuthStateErrorDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 44C14A2701D349CB37FF88A4BCC4F6D0 /* OIDAuthStateErrorDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D6320D63B184D4F2ED38553FB365D6B /* OIDIDToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 224F495B807D358E254E95E038F6CC3A /* OIDIDToken.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E645ED1670DD9C357B351E2008A9E27 /* OIDErrorUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6290E3E521375575945F4898427F1495 /* OIDErrorUtilities.m */; };
+		5350439C15B6A6B14768F23DB2A96215 /* OIDURLSessionProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D2E3B09B94E52782F58F54FF9D3AF15 /* OIDURLSessionProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		545275ACFA1FAB4181AECBB119A27607 /* AppAuthCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 679C3BE9E4209CFCD9DE4308FFC92083 /* AppAuthCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5838816E91CF3DDFB17FE08AAC251F54 /* OIDEndSessionResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = B1DEC8AB3F68B0125923250EF1B617B6 /* OIDEndSessionResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58765068BD398706621D225CF32EB739 /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 935DACA18960F2C863F2FE53D48479CC /* OIDExternalUserAgentIOSCustomBrowser.m */; };
+		62F7656FAF22E041D572A6A3F06CB6A1 /* Pods-IoTSample-App-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F9014088914DFD65264426C8ED3D7F3F /* Pods-IoTSample-App-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63980EC0F280B9E7C964F6E2A281B080 /* OIDError.m in Sources */ = {isa = PBXBuildFile; fileRef = B503BAA9B5317B09AB90D6FD5E84E9D5 /* OIDError.m */; };
+		63D6C601D72E2C1E8EA0D5A9D1773F05 /* OIDGrantTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = FBFF04424AA5F6C5C21E1988AF3E19FC /* OIDGrantTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63ECE877FA92996717F3015DE532C234 /* ValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C676019A7BC39177F214E302EE40DC3 /* ValidationError.swift */; };
+		69209A5DB2495C063ABAE2D41D13DE25 /* AppAuth-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 759F381159EE6529ADF7BB88015EE04B /* AppAuth-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6CDFFCDBB8BE82B6F1D92F2798140AC6 /* OIDServiceConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FD6BFF8F78FD70D0D1A06E352DE91164 /* OIDServiceConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6F504D67E2496DCF117B8C77F3A719CB /* OIDAuthorizationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 542F1867A0AA934C58A121A3E74F2CF3 /* OIDAuthorizationRequest.m */; };
+		6FCC848428E8706F7F70AFC140B6AFA0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
+		7209A9F003C3CD4141448D4F8840A07E /* ValidatorJWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F7EBDA0719702E2508D2189BE90426 /* ValidatorJWT.swift */; };
+		779BFD8788721CA140D261F878BEFCF8 /* OIDAuthorizationService+IOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 2250FB9BBF1EA79B72FCB1D0887A2F2B /* OIDAuthorizationService+IOS.m */; };
+		7B67C7965EACF3DEE134E23F427C2D90 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
+		7BEEBDC939ABE3E51F9344384D6940A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
+		7C7DF46BC7AA6CFBEC4A355DEE2BAEF5 /* OIDAuthorizationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BE916C657AC5DCD230BEE2FD3B205D7A /* OIDAuthorizationResponse.m */; };
+		804EF5C4B1537BB7493A205D38340DF5 /* OIDExternalUserAgentRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CBEE97C4C6DD750D488C4891EE4C9E94 /* OIDExternalUserAgentRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AC2572A26908027FE4679C9D4654BB4 /* OIDRegistrationRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = FF4FED0AF6301DF8119551C88D04ADA2 /* OIDRegistrationRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BE93A5E3156F70E47D51238B2383E99 /* OIDAuthState+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = CEC305884DFBDC33BF591CBFA03967B7 /* OIDAuthState+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8D44DABCEB7B3850E558A5DAECA4ECC1 /* OIDErrorUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 780A03907A8B988CFE650EF049B0580A /* OIDErrorUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		901E38B825A36E0E80AE6114D7E3E819 /* OIDAuthorizationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 10C826068CC3AB110B0FC469D6106CEE /* OIDAuthorizationService.m */; };
+		916D370265EDFF2FCD64C025A1B6575F /* OIDEndSessionRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = F5DB0FE3F35276D3E5F05BE095923048 /* OIDEndSessionRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9925A8B3FC84867BDCAB92EB61BE026D /* OIDExternalUserAgentIOSCustomBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 53DE18D2053FE200ADB77753B745AEEB /* OIDExternalUserAgentIOSCustomBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A37B2509EC9B298F2FBCD5982422BF44 /* OIDEndSessionResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C223F54384DCD84471D7BAD0FAF69282 /* OIDEndSessionResponse.m */; };
+		A38668D7C8836D104B5E2B905A6F895F /* OIDExternalUserAgentSession.h in Headers */ = {isa = PBXBuildFile; fileRef = BD77221E8AF1851B9D22A55A3188F7CC /* OIDExternalUserAgentSession.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A71B29499C8FF4B5ECD82A3A7F4C4EB5 /* OIDRegistrationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FE3EADA6E38BBAF666FE0201CABF83 /* OIDRegistrationRequest.m */; };
+		A77CFBA24420FB89E008D493041DF549 /* OIDAuthorizationService+IOS.h in Headers */ = {isa = PBXBuildFile; fileRef = EA39FE967AC22A07D65767476F7621B5 /* OIDAuthorizationService+IOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A78D63BFF6589F8B0D1B6EF0EA040625 /* Pods-IoTSample-App-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90530D41E52A80D01FD2ABE7C3030EE9 /* Pods-IoTSample-App-dummy.m */; };
+		AA48CEC48DC2A683636B9E4E6A7FC40C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */; };
+		AD2BC53499031011B533F8E320963B1B /* OIDTokenUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 467245CBF2A6C6C091377E7223BD2306 /* OIDTokenUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF4711A081A41CB8F27BDAA0581AD698 /* OIDTokenUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD02BC50E959CE7DBBF8444F77F5096 /* OIDTokenUtilities.m */; };
+		B0C8D1BCEE62788C4B21A858907A9587 /* OIDFieldMapping.m in Sources */ = {isa = PBXBuildFile; fileRef = 334A71BF5AFE0179D08DC0D58237E588 /* OIDFieldMapping.m */; };
+		B1DCE628A12DF16953CA2057F37DC45E /* OIDIDToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C24C56FA8D21AF577A0E032E19BEFAC /* OIDIDToken.m */; };
+		B28E515E1CD819FA77FEED02158B3E81 /* JWT.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F128DC1F7F3AEB59AB32E1D49CB7B32 /* JWT.swift */; };
+		B2EA249B3056774947BB967A9EEDFE8C /* OIDScopeUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C7CF7FA6AA17AB87A69AF5B57313B255 /* OIDScopeUtilities.m */; };
+		B392FF986CA74F5A61F253995E7279E0 /* OIDExternalUserAgentIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = FC94854F883F58928B7D47C98C1383E0 /* OIDExternalUserAgentIOS.m */; };
+		B467A9C185F4F1245AEBA2002757A3BF /* OIDClientMetadataParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 335AD1B19C88A21D29A83FB122190D23 /* OIDClientMetadataParameters.m */; };
+		B5F72BD29CD2E763D4D22F9EC0573623 /* OIDAuthorizationResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C194496E9413F6F94D1BE5868372283 /* OIDAuthorizationResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6BFFD89E75614561BF08C0411DBDF30 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616389F2384D775734D06B2D8965C11F /* Errors.swift */; };
+		B7C7A626DF409EAD89A5CFE2D5ADE2C6 /* OIDTokenRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = D881575216C096D9F37A6A4C1D1F42A4 /* OIDTokenRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB7C6FDC54785230E6093B4127267BC9 /* Pods-IoTSample-App-IoTSample-AppUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 39DAF2C32770A35ED8AEDC7158A9AF92 /* Pods-IoTSample-App-IoTSample-AppUITests-dummy.m */; };
+		C1A50DCAF23C1EABDDE021D1EBC874CB /* OIDURLQueryComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CFE49BDD0F31E13DFCF193EA709A0BD /* OIDURLQueryComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2A6B18BEC83775379128DF3BC20B671 /* OIDResponseTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = CA4F38EEBFABBA016BA79B11FC9BC774 /* OIDResponseTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7ED242736E87A72A90906BF8135F816 /* AppAuth-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32542B97E2551D78005B119F56CDD135 /* AppAuth-dummy.m */; };
+		CB0F0A6A56E57EEF111F6EA389D36462 /* OIDRegistrationResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 455D92A270FF265FFE74926F5BF6A7EE /* OIDRegistrationResponse.m */; };
+		CB7E769887199D18671DB1744A3E36D1 /* OIDServiceConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 8099699900EEEC31011EEFEE8B40E63B /* OIDServiceConfiguration.m */; };
+		CBDE4F2C5943FDBB019C104DC358855D /* OIDExternalUserAgentIOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DB5BBF482B3997A3BBCC4C1C2B1B9EB0 /* OIDExternalUserAgentIOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D2FE58D2EB9D2308E4BB396E44EA5A95 /* OIDTokenRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D90B621874904529B80A62B844ACDB /* OIDTokenRequest.m */; };
+		D59CD3262834C11024384E8BDCBF49A8 /* Pods-IoTSample-AppTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CACF706A61A680F266B38129D2BCE9F /* Pods-IoTSample-AppTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5B6120AC17D0B1C9657BDA33D8A1193 /* OIDScopes.h in Headers */ = {isa = PBXBuildFile; fileRef = 679BC8348F092D6FED7A5792B4B136ED /* OIDScopes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8CAD2884FF0A9E7DF3523FF64193808 /* OIDExternalUserAgent.h in Headers */ = {isa = PBXBuildFile; fileRef = EA43D77ACC6514CED2876E17A51A17E4 /* OIDExternalUserAgent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC0FDA87291CBF3E3160CED9DE5B5E27 /* OIDScopeUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = A4F2E9DF2C6901D3A70D2791B2D8E102 /* OIDScopeUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DFC8245DF97C0A594A25877CA80085C1 /* OIDResponseTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E41731F69F8D868F414D4154D4A8C3A /* OIDResponseTypes.m */; };
+		E16CE84FD2917F85EF33C17AA79F69A3 /* Pods-IoTSample-App-IoTSample-AppUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 549A3373B60494475439F2801478B199 /* Pods-IoTSample-App-IoTSample-AppUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2F42CAAAB91AF895659BEBB7CE9BCC6 /* JWTDecode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 143EF8724D79BEB960370CA2C1B2CA60 /* JWTDecode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC3A2694E9829836F4DF5BC091CDEC6F /* OIDServiceDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = D9B599D4F371F2A5C2F2C086B5947A4D /* OIDServiceDiscovery.m */; };
+		EC687C70ABA9E2393CD1A9A1DB473E33 /* AppAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 175A60013407D7F8961D36EDF1B04557 /* AppAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ECBB10E7E4001A1283129889C30574AE /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7F52E9440D6BFF0B1159CE55091460 /* SafariServices.framework */; };
+		FB78A6B86E74FF6BC2955152F222974F /* OIDURLSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = EB68871E15793BACD0B4960DBF0D5D7F /* OIDURLSessionProvider.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F193FB85A9D4CB91758BF0196D79C5D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C642AA10FB29936669CC269F42079C6;
+			remoteInfo = AppAuth;
+		};
+		AFFDFD41759D9A8ACA1ABB3833F6DE1B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E1F0E7CBECE226FC294E79C21B0033;
+			remoteInfo = JWTDecode;
+		};
+		D60FBBDB8274E77A50099925C958EC37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C642AA10FB29936669CC269F42079C6;
+			remoteInfo = AppAuth;
+		};
+		E8CAA2E4E24A81A316DB9E113E766845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E1F0E7CBECE226FC294E79C21B0033;
+			remoteInfo = JWTDecode;
+		};
+		E92DD4C9308BBAB332D96D521D0B35EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C78C9D0FE1EE47963BE17C2DD799F1D7;
+			remoteInfo = "Pods-IoTSample-App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05E75B073125E28C172390EE417F28C1 /* OIDClientMetadataParameters.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDClientMetadataParameters.h; path = Source/OIDClientMetadataParameters.h; sourceTree = "<group>"; };
+		0C24C56FA8D21AF577A0E032E19BEFAC /* OIDIDToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDIDToken.m; path = Source/OIDIDToken.m; sourceTree = "<group>"; };
+		10C826068CC3AB110B0FC469D6106CEE /* OIDAuthorizationService.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationService.m; path = Source/OIDAuthorizationService.m; sourceTree = "<group>"; };
+		10C89ECB86629D77963483B877465CEC /* Pods-IoTSample-App-IoTSample-AppUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IoTSample-App-IoTSample-AppUITests-frameworks.sh"; sourceTree = "<group>"; };
+		127CA7B0EF88E5D4CF7115A2950F37C7 /* OIDGrantTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDGrantTypes.m; path = Source/OIDGrantTypes.m; sourceTree = "<group>"; };
+		143EF8724D79BEB960370CA2C1B2CA60 /* JWTDecode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWTDecode-umbrella.h"; sourceTree = "<group>"; };
+		175A60013407D7F8961D36EDF1B04557 /* AppAuth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuth.h; path = Source/AppAuth.h; sourceTree = "<group>"; };
+		18D90B621874904529B80A62B844ACDB /* OIDTokenRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenRequest.m; path = Source/OIDTokenRequest.m; sourceTree = "<group>"; };
+		1B3468B9004AEAF3192F8CD3BBA5725E /* OIDRegistrationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationResponse.h; path = Source/OIDRegistrationResponse.h; sourceTree = "<group>"; };
+		1D7F52E9440D6BFF0B1159CE55091460 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SafariServices.framework; sourceTree = DEVELOPER_DIR; };
+		1E729FFD5B73F0A00F67FB28953F7AD0 /* Pods-IoTSample-App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IoTSample-App.debug.xcconfig"; sourceTree = "<group>"; };
+		224F495B807D358E254E95E038F6CC3A /* OIDIDToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDIDToken.h; path = Source/OIDIDToken.h; sourceTree = "<group>"; };
+		2250FB9BBF1EA79B72FCB1D0887A2F2B /* OIDAuthorizationService+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthorizationService+IOS.m"; path = "Source/iOS/OIDAuthorizationService+IOS.m"; sourceTree = "<group>"; };
+		2F128DC1F7F3AEB59AB32E1D49CB7B32 /* JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWT.swift; path = JWTDecode/JWT.swift; sourceTree = "<group>"; };
+		31FFB54B9B6C251AE264C644F5611BEE /* Pods-IoTSample-App */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IoTSample-App"; path = Pods_IoTSample_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32542B97E2551D78005B119F56CDD135 /* AppAuth-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AppAuth-dummy.m"; sourceTree = "<group>"; };
+		334A71BF5AFE0179D08DC0D58237E588 /* OIDFieldMapping.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDFieldMapping.m; path = Source/OIDFieldMapping.m; sourceTree = "<group>"; };
+		335AD1B19C88A21D29A83FB122190D23 /* OIDClientMetadataParameters.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDClientMetadataParameters.m; path = Source/OIDClientMetadataParameters.m; sourceTree = "<group>"; };
+		34B3F28597FCD90069EE283C8D4A8E8B /* AppAuth.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.debug.xcconfig; sourceTree = "<group>"; };
+		39DAF2C32770A35ED8AEDC7158A9AF92 /* Pods-IoTSample-App-IoTSample-AppUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IoTSample-App-IoTSample-AppUITests-dummy.m"; sourceTree = "<group>"; };
+		3C676019A7BC39177F214E302EE40DC3 /* ValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidationError.swift; path = JWTDecode/ValidationError.swift; sourceTree = "<group>"; };
+		3E421315EB45548A3C6A277EED5B595F /* Pods-IoTSample-AppTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IoTSample-AppTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3FD1B4C1246D643E9476438C28048FA8 /* AppAuth */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AppAuth; path = AppAuth.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		40F9589881CA54B435EC47593759A267 /* Pods-IoTSample-AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IoTSample-AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		41753058CEF3850EAD8EE96ECAEB844D /* Pods-IoTSample-App-IoTSample-AppUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IoTSample-App-IoTSample-AppUITests.modulemap"; sourceTree = "<group>"; };
+		44A7BAEE52C1F1D91F8F5E359C6794C8 /* AppAuth.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AppAuth.modulemap; sourceTree = "<group>"; };
+		44C14A2701D349CB37FF88A4BCC4F6D0 /* OIDAuthStateErrorDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateErrorDelegate.h; path = Source/OIDAuthStateErrorDelegate.h; sourceTree = "<group>"; };
+		455D92A270FF265FFE74926F5BF6A7EE /* OIDRegistrationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationResponse.m; path = Source/OIDRegistrationResponse.m; sourceTree = "<group>"; };
+		467245CBF2A6C6C091377E7223BD2306 /* OIDTokenUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenUtilities.h; path = Source/OIDTokenUtilities.h; sourceTree = "<group>"; };
+		488A2E2B385B3380DA4593939EE648F2 /* OIDDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDDefines.h; path = Source/OIDDefines.h; sourceTree = "<group>"; };
+		48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4CFE49BDD0F31E13DFCF193EA709A0BD /* OIDURLQueryComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLQueryComponent.h; path = Source/OIDURLQueryComponent.h; sourceTree = "<group>"; };
+		53DE18D2053FE200ADB77753B745AEEB /* OIDExternalUserAgentIOSCustomBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOSCustomBrowser.h; path = Source/iOS/OIDExternalUserAgentIOSCustomBrowser.h; sourceTree = "<group>"; };
+		542F1867A0AA934C58A121A3E74F2CF3 /* OIDAuthorizationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationRequest.m; path = Source/OIDAuthorizationRequest.m; sourceTree = "<group>"; };
+		549A3373B60494475439F2801478B199 /* Pods-IoTSample-App-IoTSample-AppUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IoTSample-App-IoTSample-AppUITests-umbrella.h"; sourceTree = "<group>"; };
+		5D2E3B09B94E52782F58F54FF9D3AF15 /* OIDURLSessionProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDURLSessionProvider.h; path = Source/OIDURLSessionProvider.h; sourceTree = "<group>"; };
+		5E41731F69F8D868F414D4154D4A8C3A /* OIDResponseTypes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDResponseTypes.m; path = Source/OIDResponseTypes.m; sourceTree = "<group>"; };
+		616389F2384D775734D06B2D8965C11F /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = JWTDecode/Errors.swift; sourceTree = "<group>"; };
+		6290E3E521375575945F4898427F1495 /* OIDErrorUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDErrorUtilities.m; path = Source/OIDErrorUtilities.m; sourceTree = "<group>"; };
+		66CBBABE4CC58D9E0F7922E2FF043450 /* OIDScopes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopes.m; path = Source/OIDScopes.m; sourceTree = "<group>"; };
+		679BC8348F092D6FED7A5792B4B136ED /* OIDScopes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopes.h; path = Source/OIDScopes.h; sourceTree = "<group>"; };
+		679C3BE9E4209CFCD9DE4308FFC92083 /* AppAuthCore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AppAuthCore.h; path = Source/AppAuthCore.h; sourceTree = "<group>"; };
+		688B68CE09C8CD8D0373D178BCC6ECCA /* JWTDecode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JWTDecode.modulemap; sourceTree = "<group>"; };
+		6C194496E9413F6F94D1BE5868372283 /* OIDAuthorizationResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationResponse.h; path = Source/OIDAuthorizationResponse.h; sourceTree = "<group>"; };
+		6E7E83B093C5D27C34CA2CD52EEBAC6D /* AppAuth-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-prefix.pch"; sourceTree = "<group>"; };
+		759F381159EE6529ADF7BB88015EE04B /* AppAuth-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AppAuth-umbrella.h"; sourceTree = "<group>"; };
+		7734520C134525AC1AEB09E5CB0394DC /* OIDServiceDiscovery.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceDiscovery.h; path = Source/OIDServiceDiscovery.h; sourceTree = "<group>"; };
+		780A03907A8B988CFE650EF049B0580A /* OIDErrorUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDErrorUtilities.h; path = Source/OIDErrorUtilities.h; sourceTree = "<group>"; };
+		78751894F2E88ED14A172B60A93EB7C8 /* JWTDecode.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWTDecode.debug.xcconfig; sourceTree = "<group>"; };
+		7A8D4AC02B51FD03224739D06AEE207B /* JWTDecode */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JWTDecode; path = JWTDecode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8099699900EEEC31011EEFEE8B40E63B /* OIDServiceConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceConfiguration.m; path = Source/OIDServiceConfiguration.m; sourceTree = "<group>"; };
+		8321753915ED703F7A3C90DC975333C6 /* AppAuth-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AppAuth-Info.plist"; sourceTree = "<group>"; };
+		8517ED5070901A5937F878FC02002BAB /* OIDURLQueryComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLQueryComponent.m; path = Source/OIDURLQueryComponent.m; sourceTree = "<group>"; };
+		8919E07BC426450BA323F80545570E0C /* OIDAuthorizationService.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationService.h; path = Source/OIDAuthorizationService.h; sourceTree = "<group>"; };
+		8CACF706A61A680F266B38129D2BCE9F /* Pods-IoTSample-AppTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IoTSample-AppTests-umbrella.h"; sourceTree = "<group>"; };
+		90530D41E52A80D01FD2ABE7C3030EE9 /* Pods-IoTSample-App-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IoTSample-App-dummy.m"; sourceTree = "<group>"; };
+		9065586EC36B9B25EAC6C9754FB22F2C /* Pods-IoTSample-App-IoTSample-AppUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IoTSample-App-IoTSample-AppUITests"; path = Pods_IoTSample_App_IoTSample_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90FE3EADA6E38BBAF666FE0201CABF83 /* OIDRegistrationRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDRegistrationRequest.m; path = Source/OIDRegistrationRequest.m; sourceTree = "<group>"; };
+		926EB481973E1A1A78F7A1107FDF6EE2 /* JWTDecode-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JWTDecode-Info.plist"; sourceTree = "<group>"; };
+		935DACA18960F2C863F2FE53D48479CC /* OIDExternalUserAgentIOSCustomBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOSCustomBrowser.m; path = Source/iOS/OIDExternalUserAgentIOSCustomBrowser.m; sourceTree = "<group>"; };
+		9368AE23194A71EFA1960FB1BBE300CE /* OIDTokenResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenResponse.h; path = Source/OIDTokenResponse.h; sourceTree = "<group>"; };
+		96F7EBDA0719702E2508D2189BE90426 /* ValidatorJWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ValidatorJWT.swift; path = JWTDecode/ValidatorJWT.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A159E046F1AA89D7B00EB44CE37758B1 /* OIDAuthorizationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthorizationRequest.h; path = Source/OIDAuthorizationRequest.h; sourceTree = "<group>"; };
+		A2A5FD60BE2C817BC479CE826EF21080 /* Pods-IoTSample-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IoTSample-App.release.xcconfig"; sourceTree = "<group>"; };
+		A46C4CFA64BFD6C35FEB8DCAB5C96DC4 /* Pods-IoTSample-AppTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IoTSample-AppTests"; path = Pods_IoTSample_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F2E9DF2C6901D3A70D2791B2D8E102 /* OIDScopeUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDScopeUtilities.h; path = Source/OIDScopeUtilities.h; sourceTree = "<group>"; };
+		A5D46D3FFC73CCD46AD6823DA16DF14C /* AppAuth.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AppAuth.release.xcconfig; sourceTree = "<group>"; };
+		A5FE4D0F34FC6015BAC35F24F0F07579 /* Pods-IoTSample-AppTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IoTSample-AppTests.modulemap"; sourceTree = "<group>"; };
+		A774096AD16D5E3241C72D260FA560ED /* Pods-IoTSample-App-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IoTSample-App-Info.plist"; sourceTree = "<group>"; };
+		AA5A54E89DC54F678F307F3B3F7F05AD /* Pods-IoTSample-App-IoTSample-AppUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IoTSample-App-IoTSample-AppUITests-Info.plist"; sourceTree = "<group>"; };
+		AE825E87156CD37880F1E42576141BF1 /* OIDAuthState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthState.h; path = Source/OIDAuthState.h; sourceTree = "<group>"; };
+		B1DEC8AB3F68B0125923250EF1B617B6 /* OIDEndSessionResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionResponse.h; path = Source/OIDEndSessionResponse.h; sourceTree = "<group>"; };
+		B1EA2F5BBBCC1EADE04576DECB2F3102 /* Pods-IoTSample-App-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IoTSample-App-frameworks.sh"; sourceTree = "<group>"; };
+		B3EBEA0063CD9B2136BBCC251BEEC99F /* OIDTokenResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenResponse.m; path = Source/OIDTokenResponse.m; sourceTree = "<group>"; };
+		B503BAA9B5317B09AB90D6FD5E84E9D5 /* OIDError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDError.m; path = Source/OIDError.m; sourceTree = "<group>"; };
+		BD77221E8AF1851B9D22A55A3188F7CC /* OIDExternalUserAgentSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentSession.h; path = Source/OIDExternalUserAgentSession.h; sourceTree = "<group>"; };
+		BE916C657AC5DCD230BEE2FD3B205D7A /* OIDAuthorizationResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthorizationResponse.m; path = Source/OIDAuthorizationResponse.m; sourceTree = "<group>"; };
+		C14C383E0CCA19A8D96CC04DB72D2BFD /* JWTDecode.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JWTDecode.release.xcconfig; sourceTree = "<group>"; };
+		C1D1CB008745AD3F7D2263C89991976E /* OIDError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDError.h; path = Source/OIDError.h; sourceTree = "<group>"; };
+		C223F54384DCD84471D7BAD0FAF69282 /* OIDEndSessionResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionResponse.m; path = Source/OIDEndSessionResponse.m; sourceTree = "<group>"; };
+		C321D7D125C4944A5A6E1D3DB3C38E92 /* Pods-IoTSample-App-IoTSample-AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IoTSample-App-IoTSample-AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C4576119AFE9B8AA5FB30656581D1EB2 /* Pods-IoTSample-App-IoTSample-AppUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IoTSample-App-IoTSample-AppUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7CF7FA6AA17AB87A69AF5B57313B255 /* OIDScopeUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDScopeUtilities.m; path = Source/OIDScopeUtilities.m; sourceTree = "<group>"; };
+		C963253E6A82180FB430C6D3DF60B673 /* JWTDecode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JWTDecode.swift; path = JWTDecode/JWTDecode.swift; sourceTree = "<group>"; };
+		CA4F38EEBFABBA016BA79B11FC9BC774 /* OIDResponseTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDResponseTypes.h; path = Source/OIDResponseTypes.h; sourceTree = "<group>"; };
+		CBEE97C4C6DD750D488C4891EE4C9E94 /* OIDExternalUserAgentRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentRequest.h; path = Source/OIDExternalUserAgentRequest.h; sourceTree = "<group>"; };
+		CC074FF9C6F7D1C552FF5908F1467ED2 /* Pods-IoTSample-AppTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IoTSample-AppTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CCD02BC50E959CE7DBBF8444F77F5096 /* OIDTokenUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDTokenUtilities.m; path = Source/OIDTokenUtilities.m; sourceTree = "<group>"; };
+		CEC305884DFBDC33BF591CBFA03967B7 /* OIDAuthState+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthState+IOS.h"; path = "Source/iOS/OIDAuthState+IOS.h"; sourceTree = "<group>"; };
+		CF083E2C98B6096026BF2B8F517E4284 /* Pods-IoTSample-App-IoTSample-AppUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IoTSample-App-IoTSample-AppUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D3545E1413DD5D0C6B8D3997D8C9A153 /* JWTDecode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JWTDecode-prefix.pch"; sourceTree = "<group>"; };
+		D4966B2A7A07676DFCB25B20D0019382 /* OIDFieldMapping.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDFieldMapping.h; path = Source/OIDFieldMapping.h; sourceTree = "<group>"; };
+		D7435ED200F248EA4896A52F3C0E551C /* OIDAuthStateChangeDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDAuthStateChangeDelegate.h; path = Source/OIDAuthStateChangeDelegate.h; sourceTree = "<group>"; };
+		D82B3646996E6C5FC51022710A47B8CA /* TokenValidators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TokenValidators.swift; path = JWTDecode/TokenValidators.swift; sourceTree = "<group>"; };
+		D881575216C096D9F37A6A4C1D1F42A4 /* OIDTokenRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDTokenRequest.h; path = Source/OIDTokenRequest.h; sourceTree = "<group>"; };
+		D8D120E9655B584F36F902581E5E355E /* Pods-IoTSample-App-IoTSample-AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IoTSample-App-IoTSample-AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8DFA3DB480B3736830282BA5915C634 /* A0JWT.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = A0JWT.swift; path = JWTDecode/A0JWT.swift; sourceTree = "<group>"; };
+		D9B599D4F371F2A5C2F2C086B5947A4D /* OIDServiceDiscovery.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDServiceDiscovery.m; path = Source/OIDServiceDiscovery.m; sourceTree = "<group>"; };
+		DB5BBF482B3997A3BBCC4C1C2B1B9EB0 /* OIDExternalUserAgentIOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgentIOS.h; path = Source/iOS/OIDExternalUserAgentIOS.h; sourceTree = "<group>"; };
+		DC66840B38F9FDDE3916AD582B371BFF /* Pods-IoTSample-App-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IoTSample-App-acknowledgements.markdown"; sourceTree = "<group>"; };
+		EA39FE967AC22A07D65767476F7621B5 /* OIDAuthorizationService+IOS.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "OIDAuthorizationService+IOS.h"; path = "Source/iOS/OIDAuthorizationService+IOS.h"; sourceTree = "<group>"; };
+		EA43D77ACC6514CED2876E17A51A17E4 /* OIDExternalUserAgent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDExternalUserAgent.h; path = Source/OIDExternalUserAgent.h; sourceTree = "<group>"; };
+		EB68871E15793BACD0B4960DBF0D5D7F /* OIDURLSessionProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDURLSessionProvider.m; path = Source/OIDURLSessionProvider.m; sourceTree = "<group>"; };
+		EEC37A1AAA71CBD06A5C672BA60321EB /* Pods-IoTSample-AppTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IoTSample-AppTests-Info.plist"; sourceTree = "<group>"; };
+		F167DF4D6834BC070829BE85D20784CD /* OIDAuthState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDAuthState.m; path = Source/OIDAuthState.m; sourceTree = "<group>"; };
+		F26072831483387F8CC32F19F2C23E75 /* OIDEndSessionRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDEndSessionRequest.m; path = Source/OIDEndSessionRequest.m; sourceTree = "<group>"; };
+		F3BC485C87BFD1553A5E1EBA43A858FA /* OIDAuthState+IOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "OIDAuthState+IOS.m"; path = "Source/iOS/OIDAuthState+IOS.m"; sourceTree = "<group>"; };
+		F4C6CB50682747864FE159FB6E8C0068 /* Pods-IoTSample-App-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IoTSample-App-acknowledgements.plist"; sourceTree = "<group>"; };
+		F5DB0FE3F35276D3E5F05BE095923048 /* OIDEndSessionRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDEndSessionRequest.h; path = Source/OIDEndSessionRequest.h; sourceTree = "<group>"; };
+		F9014088914DFD65264426C8ED3D7F3F /* Pods-IoTSample-App-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IoTSample-App-umbrella.h"; sourceTree = "<group>"; };
+		F9866E1979709DE82DE1DCEBC6E13103 /* JWTDecode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JWTDecode-dummy.m"; sourceTree = "<group>"; };
+		FBFF04424AA5F6C5C21E1988AF3E19FC /* OIDGrantTypes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDGrantTypes.h; path = Source/OIDGrantTypes.h; sourceTree = "<group>"; };
+		FC07933292B1D39837C9D390102865B5 /* Pods-IoTSample-AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IoTSample-AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC94854F883F58928B7D47C98C1383E0 /* OIDExternalUserAgentIOS.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = OIDExternalUserAgentIOS.m; path = Source/iOS/OIDExternalUserAgentIOS.m; sourceTree = "<group>"; };
+		FD3D68273875BBB77F78FAEEB3A79BAE /* Pods-IoTSample-AppTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IoTSample-AppTests-dummy.m"; sourceTree = "<group>"; };
+		FD6BFF8F78FD70D0D1A06E352DE91164 /* OIDServiceConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDServiceConfiguration.h; path = Source/OIDServiceConfiguration.h; sourceTree = "<group>"; };
+		FE7630F9CEF5808B2A8ACC21E7F3F3D6 /* Pods-IoTSample-App.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IoTSample-App.modulemap"; sourceTree = "<group>"; };
+		FF4FED0AF6301DF8119551C88D04ADA2 /* OIDRegistrationRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OIDRegistrationRequest.h; path = Source/OIDRegistrationRequest.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		200E813EC276887D69D5E936AD3D3613 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32615FDDBA9B3EE9D4636A71F5ACADD7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E2864E1DC6A8C54B3963477ADAAD49C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA48CEC48DC2A683636B9E4E6A7FC40C /* Foundation.framework in Frameworks */,
+				ECBB10E7E4001A1283129889C30574AE /* SafariServices.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43D5A46ED43BF4677C4470890DF96CA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BEEBDC939ABE3E51F9344384D6940A5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6154EBAA72C2CB9B7354BD9C480E62F4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B67C7965EACF3DEE134E23F427C2D90 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4F252C452FADFE0866AF42B0217837A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FCC848428E8706F7F70AFC140B6AFA0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01AB47F3F86D92DD11B8B4C2792F57AA /* Pods-IoTSample-App-IoTSample-AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41753058CEF3850EAD8EE96ECAEB844D /* Pods-IoTSample-App-IoTSample-AppUITests.modulemap */,
+				C4576119AFE9B8AA5FB30656581D1EB2 /* Pods-IoTSample-App-IoTSample-AppUITests-acknowledgements.markdown */,
+				CF083E2C98B6096026BF2B8F517E4284 /* Pods-IoTSample-App-IoTSample-AppUITests-acknowledgements.plist */,
+				39DAF2C32770A35ED8AEDC7158A9AF92 /* Pods-IoTSample-App-IoTSample-AppUITests-dummy.m */,
+				10C89ECB86629D77963483B877465CEC /* Pods-IoTSample-App-IoTSample-AppUITests-frameworks.sh */,
+				AA5A54E89DC54F678F307F3B3F7F05AD /* Pods-IoTSample-App-IoTSample-AppUITests-Info.plist */,
+				549A3373B60494475439F2801478B199 /* Pods-IoTSample-App-IoTSample-AppUITests-umbrella.h */,
+				D8D120E9655B584F36F902581E5E355E /* Pods-IoTSample-App-IoTSample-AppUITests.debug.xcconfig */,
+				C321D7D125C4944A5A6E1D3DB3C38E92 /* Pods-IoTSample-App-IoTSample-AppUITests.release.xcconfig */,
+			);
+			name = "Pods-IoTSample-App-IoTSample-AppUITests";
+			path = "Target Support Files/Pods-IoTSample-App-IoTSample-AppUITests";
+			sourceTree = "<group>";
+		};
+		11BE1FA1651E99643D070625B8AB2BB5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5365DDB07D608A2D63E24B4B10B57BEA /* Pods-IoTSample-App */,
+				01AB47F3F86D92DD11B8B4C2792F57AA /* Pods-IoTSample-App-IoTSample-AppUITests */,
+				C84EBD94867D2CFBFE7E4E5F55335920 /* Pods-IoTSample-AppTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		1243BA30D9C5E3D08D813FEFAAFC39D1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				679C3BE9E4209CFCD9DE4308FFC92083 /* AppAuthCore.h */,
+				A159E046F1AA89D7B00EB44CE37758B1 /* OIDAuthorizationRequest.h */,
+				542F1867A0AA934C58A121A3E74F2CF3 /* OIDAuthorizationRequest.m */,
+				6C194496E9413F6F94D1BE5868372283 /* OIDAuthorizationResponse.h */,
+				BE916C657AC5DCD230BEE2FD3B205D7A /* OIDAuthorizationResponse.m */,
+				8919E07BC426450BA323F80545570E0C /* OIDAuthorizationService.h */,
+				10C826068CC3AB110B0FC469D6106CEE /* OIDAuthorizationService.m */,
+				AE825E87156CD37880F1E42576141BF1 /* OIDAuthState.h */,
+				F167DF4D6834BC070829BE85D20784CD /* OIDAuthState.m */,
+				D7435ED200F248EA4896A52F3C0E551C /* OIDAuthStateChangeDelegate.h */,
+				44C14A2701D349CB37FF88A4BCC4F6D0 /* OIDAuthStateErrorDelegate.h */,
+				05E75B073125E28C172390EE417F28C1 /* OIDClientMetadataParameters.h */,
+				335AD1B19C88A21D29A83FB122190D23 /* OIDClientMetadataParameters.m */,
+				488A2E2B385B3380DA4593939EE648F2 /* OIDDefines.h */,
+				F5DB0FE3F35276D3E5F05BE095923048 /* OIDEndSessionRequest.h */,
+				F26072831483387F8CC32F19F2C23E75 /* OIDEndSessionRequest.m */,
+				B1DEC8AB3F68B0125923250EF1B617B6 /* OIDEndSessionResponse.h */,
+				C223F54384DCD84471D7BAD0FAF69282 /* OIDEndSessionResponse.m */,
+				C1D1CB008745AD3F7D2263C89991976E /* OIDError.h */,
+				B503BAA9B5317B09AB90D6FD5E84E9D5 /* OIDError.m */,
+				780A03907A8B988CFE650EF049B0580A /* OIDErrorUtilities.h */,
+				6290E3E521375575945F4898427F1495 /* OIDErrorUtilities.m */,
+				EA43D77ACC6514CED2876E17A51A17E4 /* OIDExternalUserAgent.h */,
+				CBEE97C4C6DD750D488C4891EE4C9E94 /* OIDExternalUserAgentRequest.h */,
+				BD77221E8AF1851B9D22A55A3188F7CC /* OIDExternalUserAgentSession.h */,
+				D4966B2A7A07676DFCB25B20D0019382 /* OIDFieldMapping.h */,
+				334A71BF5AFE0179D08DC0D58237E588 /* OIDFieldMapping.m */,
+				FBFF04424AA5F6C5C21E1988AF3E19FC /* OIDGrantTypes.h */,
+				127CA7B0EF88E5D4CF7115A2950F37C7 /* OIDGrantTypes.m */,
+				224F495B807D358E254E95E038F6CC3A /* OIDIDToken.h */,
+				0C24C56FA8D21AF577A0E032E19BEFAC /* OIDIDToken.m */,
+				FF4FED0AF6301DF8119551C88D04ADA2 /* OIDRegistrationRequest.h */,
+				90FE3EADA6E38BBAF666FE0201CABF83 /* OIDRegistrationRequest.m */,
+				1B3468B9004AEAF3192F8CD3BBA5725E /* OIDRegistrationResponse.h */,
+				455D92A270FF265FFE74926F5BF6A7EE /* OIDRegistrationResponse.m */,
+				CA4F38EEBFABBA016BA79B11FC9BC774 /* OIDResponseTypes.h */,
+				5E41731F69F8D868F414D4154D4A8C3A /* OIDResponseTypes.m */,
+				679BC8348F092D6FED7A5792B4B136ED /* OIDScopes.h */,
+				66CBBABE4CC58D9E0F7922E2FF043450 /* OIDScopes.m */,
+				A4F2E9DF2C6901D3A70D2791B2D8E102 /* OIDScopeUtilities.h */,
+				C7CF7FA6AA17AB87A69AF5B57313B255 /* OIDScopeUtilities.m */,
+				FD6BFF8F78FD70D0D1A06E352DE91164 /* OIDServiceConfiguration.h */,
+				8099699900EEEC31011EEFEE8B40E63B /* OIDServiceConfiguration.m */,
+				7734520C134525AC1AEB09E5CB0394DC /* OIDServiceDiscovery.h */,
+				D9B599D4F371F2A5C2F2C086B5947A4D /* OIDServiceDiscovery.m */,
+				D881575216C096D9F37A6A4C1D1F42A4 /* OIDTokenRequest.h */,
+				18D90B621874904529B80A62B844ACDB /* OIDTokenRequest.m */,
+				9368AE23194A71EFA1960FB1BBE300CE /* OIDTokenResponse.h */,
+				B3EBEA0063CD9B2136BBCC251BEEC99F /* OIDTokenResponse.m */,
+				467245CBF2A6C6C091377E7223BD2306 /* OIDTokenUtilities.h */,
+				CCD02BC50E959CE7DBBF8444F77F5096 /* OIDTokenUtilities.m */,
+				4CFE49BDD0F31E13DFCF193EA709A0BD /* OIDURLQueryComponent.h */,
+				8517ED5070901A5937F878FC02002BAB /* OIDURLQueryComponent.m */,
+				5D2E3B09B94E52782F58F54FF9D3AF15 /* OIDURLSessionProvider.h */,
+				EB68871E15793BACD0B4960DBF0D5D7F /* OIDURLSessionProvider.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4DC98E24FD245DA7505C9B33D5BE3D1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50969764CC5BDA9754B748C595368F36 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				688B68CE09C8CD8D0373D178BCC6ECCA /* JWTDecode.modulemap */,
+				F9866E1979709DE82DE1DCEBC6E13103 /* JWTDecode-dummy.m */,
+				926EB481973E1A1A78F7A1107FDF6EE2 /* JWTDecode-Info.plist */,
+				D3545E1413DD5D0C6B8D3997D8C9A153 /* JWTDecode-prefix.pch */,
+				143EF8724D79BEB960370CA2C1B2CA60 /* JWTDecode-umbrella.h */,
+				78751894F2E88ED14A172B60A93EB7C8 /* JWTDecode.debug.xcconfig */,
+				C14C383E0CCA19A8D96CC04DB72D2BFD /* JWTDecode.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JWTDecode";
+			sourceTree = "<group>";
+		};
+		5365DDB07D608A2D63E24B4B10B57BEA /* Pods-IoTSample-App */ = {
+			isa = PBXGroup;
+			children = (
+				FE7630F9CEF5808B2A8ACC21E7F3F3D6 /* Pods-IoTSample-App.modulemap */,
+				DC66840B38F9FDDE3916AD582B371BFF /* Pods-IoTSample-App-acknowledgements.markdown */,
+				F4C6CB50682747864FE159FB6E8C0068 /* Pods-IoTSample-App-acknowledgements.plist */,
+				90530D41E52A80D01FD2ABE7C3030EE9 /* Pods-IoTSample-App-dummy.m */,
+				B1EA2F5BBBCC1EADE04576DECB2F3102 /* Pods-IoTSample-App-frameworks.sh */,
+				A774096AD16D5E3241C72D260FA560ED /* Pods-IoTSample-App-Info.plist */,
+				F9014088914DFD65264426C8ED3D7F3F /* Pods-IoTSample-App-umbrella.h */,
+				1E729FFD5B73F0A00F67FB28953F7AD0 /* Pods-IoTSample-App.debug.xcconfig */,
+				A2A5FD60BE2C817BC479CE826EF21080 /* Pods-IoTSample-App.release.xcconfig */,
+			);
+			name = "Pods-IoTSample-App";
+			path = "Target Support Files/Pods-IoTSample-App";
+			sourceTree = "<group>";
+		};
+		54E25CC82519A3CA68922F70FCAF4595 /* JWTDecode */ = {
+			isa = PBXGroup;
+			children = (
+				D8DFA3DB480B3736830282BA5915C634 /* A0JWT.swift */,
+				616389F2384D775734D06B2D8965C11F /* Errors.swift */,
+				2F128DC1F7F3AEB59AB32E1D49CB7B32 /* JWT.swift */,
+				C963253E6A82180FB430C6D3DF60B673 /* JWTDecode.swift */,
+				D82B3646996E6C5FC51022710A47B8CA /* TokenValidators.swift */,
+				3C676019A7BC39177F214E302EE40DC3 /* ValidationError.swift */,
+				96F7EBDA0719702E2508D2189BE90426 /* ValidatorJWT.swift */,
+				50969764CC5BDA9754B748C595368F36 /* Support Files */,
+			);
+			name = JWTDecode;
+			path = JWTDecode;
+			sourceTree = "<group>";
+		};
+		7E990C14B1E100288EEDA1E3DF7774AF /* AppAuth */ = {
+			isa = PBXGroup;
+			children = (
+				1243BA30D9C5E3D08D813FEFAAFC39D1 /* Core */,
+				E05283592F76DF1EEFDFB95A0D1F8D53 /* ExternalUserAgent */,
+				99D118B9A357D3FE0117DF253C632F35 /* Support Files */,
+			);
+			name = AppAuth;
+			path = AppAuth;
+			sourceTree = "<group>";
+		};
+		7F73FEBF92CFCB9702F52E57C40B3064 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7E990C14B1E100288EEDA1E3DF7774AF /* AppAuth */,
+				54E25CC82519A3CA68922F70FCAF4595 /* JWTDecode */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99D118B9A357D3FE0117DF253C632F35 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				44A7BAEE52C1F1D91F8F5E359C6794C8 /* AppAuth.modulemap */,
+				32542B97E2551D78005B119F56CDD135 /* AppAuth-dummy.m */,
+				8321753915ED703F7A3C90DC975333C6 /* AppAuth-Info.plist */,
+				6E7E83B093C5D27C34CA2CD52EEBAC6D /* AppAuth-prefix.pch */,
+				759F381159EE6529ADF7BB88015EE04B /* AppAuth-umbrella.h */,
+				34B3F28597FCD90069EE283C8D4A8E8B /* AppAuth.debug.xcconfig */,
+				A5D46D3FFC73CCD46AD6823DA16DF14C /* AppAuth.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AppAuth";
+			sourceTree = "<group>";
+		};
+		A4DC98E24FD245DA7505C9B33D5BE3D1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				48DBC1182C8415D263FF3E4D6A690614 /* Foundation.framework */,
+				1D7F52E9440D6BFF0B1159CE55091460 /* SafariServices.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C84EBD94867D2CFBFE7E4E5F55335920 /* Pods-IoTSample-AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5FE4D0F34FC6015BAC35F24F0F07579 /* Pods-IoTSample-AppTests.modulemap */,
+				3E421315EB45548A3C6A277EED5B595F /* Pods-IoTSample-AppTests-acknowledgements.markdown */,
+				CC074FF9C6F7D1C552FF5908F1467ED2 /* Pods-IoTSample-AppTests-acknowledgements.plist */,
+				FD3D68273875BBB77F78FAEEB3A79BAE /* Pods-IoTSample-AppTests-dummy.m */,
+				EEC37A1AAA71CBD06A5C672BA60321EB /* Pods-IoTSample-AppTests-Info.plist */,
+				8CACF706A61A680F266B38129D2BCE9F /* Pods-IoTSample-AppTests-umbrella.h */,
+				FC07933292B1D39837C9D390102865B5 /* Pods-IoTSample-AppTests.debug.xcconfig */,
+				40F9589881CA54B435EC47593759A267 /* Pods-IoTSample-AppTests.release.xcconfig */,
+			);
+			name = "Pods-IoTSample-AppTests";
+			path = "Target Support Files/Pods-IoTSample-AppTests";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				7F73FEBF92CFCB9702F52E57C40B3064 /* Pods */,
+				FA02FE707F9A88706E6080DA1B033AE2 /* Products */,
+				11BE1FA1651E99643D070625B8AB2BB5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E05283592F76DF1EEFDFB95A0D1F8D53 /* ExternalUserAgent */ = {
+			isa = PBXGroup;
+			children = (
+				175A60013407D7F8961D36EDF1B04557 /* AppAuth.h */,
+				EA39FE967AC22A07D65767476F7621B5 /* OIDAuthorizationService+IOS.h */,
+				2250FB9BBF1EA79B72FCB1D0887A2F2B /* OIDAuthorizationService+IOS.m */,
+				CEC305884DFBDC33BF591CBFA03967B7 /* OIDAuthState+IOS.h */,
+				F3BC485C87BFD1553A5E1EBA43A858FA /* OIDAuthState+IOS.m */,
+				DB5BBF482B3997A3BBCC4C1C2B1B9EB0 /* OIDExternalUserAgentIOS.h */,
+				FC94854F883F58928B7D47C98C1383E0 /* OIDExternalUserAgentIOS.m */,
+				53DE18D2053FE200ADB77753B745AEEB /* OIDExternalUserAgentIOSCustomBrowser.h */,
+				935DACA18960F2C863F2FE53D48479CC /* OIDExternalUserAgentIOSCustomBrowser.m */,
+			);
+			name = ExternalUserAgent;
+			sourceTree = "<group>";
+		};
+		FA02FE707F9A88706E6080DA1B033AE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FD1B4C1246D643E9476438C28048FA8 /* AppAuth */,
+				7A8D4AC02B51FD03224739D06AEE207B /* JWTDecode */,
+				31FFB54B9B6C251AE264C644F5611BEE /* Pods-IoTSample-App */,
+				9065586EC36B9B25EAC6C9754FB22F2C /* Pods-IoTSample-App-IoTSample-AppUITests */,
+				A46C4CFA64BFD6C35FEB8DCAB5C96DC4 /* Pods-IoTSample-AppTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0E099344DC23AA52C3C084F59A2B45FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E16CE84FD2917F85EF33C17AA79F69A3 /* Pods-IoTSample-App-IoTSample-AppUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B27737EB4C784FB0BC35CB07BE6E3F3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC687C70ABA9E2393CD1A9A1DB473E33 /* AppAuth.h in Headers */,
+				69209A5DB2495C063ABAE2D41D13DE25 /* AppAuth-umbrella.h in Headers */,
+				545275ACFA1FAB4181AECBB119A27607 /* AppAuthCore.h in Headers */,
+				1C5486689211E3574DE7BB55EAF6DE36 /* OIDAuthorizationRequest.h in Headers */,
+				B5F72BD29CD2E763D4D22F9EC0573623 /* OIDAuthorizationResponse.h in Headers */,
+				3E4C5F302D03A3D001A9896FC985DBF2 /* OIDAuthorizationService.h in Headers */,
+				A77CFBA24420FB89E008D493041DF549 /* OIDAuthorizationService+IOS.h in Headers */,
+				4015CCD2E156BA2D9CCFA763962ED98C /* OIDAuthState.h in Headers */,
+				8BE93A5E3156F70E47D51238B2383E99 /* OIDAuthState+IOS.h in Headers */,
+				21CC0C2173C307C3A5C5D3B2CF6ABFD7 /* OIDAuthStateChangeDelegate.h in Headers */,
+				4D357A613F29551ED6EC35DCA957E2E2 /* OIDAuthStateErrorDelegate.h in Headers */,
+				19C5D640929EAE465A0433990DE5FBF3 /* OIDClientMetadataParameters.h in Headers */,
+				1FCEA3850F5D005A8C4033EF740C537E /* OIDDefines.h in Headers */,
+				916D370265EDFF2FCD64C025A1B6575F /* OIDEndSessionRequest.h in Headers */,
+				5838816E91CF3DDFB17FE08AAC251F54 /* OIDEndSessionResponse.h in Headers */,
+				1B3C9F60C3DDEBE912F8FB659A44B122 /* OIDError.h in Headers */,
+				8D44DABCEB7B3850E558A5DAECA4ECC1 /* OIDErrorUtilities.h in Headers */,
+				D8CAD2884FF0A9E7DF3523FF64193808 /* OIDExternalUserAgent.h in Headers */,
+				CBDE4F2C5943FDBB019C104DC358855D /* OIDExternalUserAgentIOS.h in Headers */,
+				9925A8B3FC84867BDCAB92EB61BE026D /* OIDExternalUserAgentIOSCustomBrowser.h in Headers */,
+				804EF5C4B1537BB7493A205D38340DF5 /* OIDExternalUserAgentRequest.h in Headers */,
+				A38668D7C8836D104B5E2B905A6F895F /* OIDExternalUserAgentSession.h in Headers */,
+				3C4EE897521356A16C065E9C405E407D /* OIDFieldMapping.h in Headers */,
+				63D6C601D72E2C1E8EA0D5A9D1773F05 /* OIDGrantTypes.h in Headers */,
+				4D6320D63B184D4F2ED38553FB365D6B /* OIDIDToken.h in Headers */,
+				8AC2572A26908027FE4679C9D4654BB4 /* OIDRegistrationRequest.h in Headers */,
+				3D8A8369C220032A1E0E4D5C9AE88D29 /* OIDRegistrationResponse.h in Headers */,
+				C2A6B18BEC83775379128DF3BC20B671 /* OIDResponseTypes.h in Headers */,
+				D5B6120AC17D0B1C9657BDA33D8A1193 /* OIDScopes.h in Headers */,
+				DC0FDA87291CBF3E3160CED9DE5B5E27 /* OIDScopeUtilities.h in Headers */,
+				6CDFFCDBB8BE82B6F1D92F2798140AC6 /* OIDServiceConfiguration.h in Headers */,
+				0212F80E4831291F06CA639E7F5667BF /* OIDServiceDiscovery.h in Headers */,
+				B7C7A626DF409EAD89A5CFE2D5ADE2C6 /* OIDTokenRequest.h in Headers */,
+				14BC0961238FD037B997290DEF5AD588 /* OIDTokenResponse.h in Headers */,
+				AD2BC53499031011B533F8E320963B1B /* OIDTokenUtilities.h in Headers */,
+				C1A50DCAF23C1EABDDE021D1EBC874CB /* OIDURLQueryComponent.h in Headers */,
+				5350439C15B6A6B14768F23DB2A96215 /* OIDURLSessionProvider.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20460FE023F5672C3E3243D1050F75FA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D59CD3262834C11024384E8BDCBF49A8 /* Pods-IoTSample-AppTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3429F2B3555CC13297B433E41DDE3B0A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2F42CAAAB91AF895659BEBB7CE9BCC6 /* JWTDecode-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D80D9AC9435F869BAA5FA610F06C2769 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62F7656FAF22E041D572A6A3F06CB6A1 /* Pods-IoTSample-App-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D548CEC39892FEC5D6A1C2D3AF329C1 /* Build configuration list for PBXNativeTarget "JWTDecode" */;
+			buildPhases = (
+				3429F2B3555CC13297B433E41DDE3B0A /* Headers */,
+				80C8653D702675B24E702BB06558DEBB /* Sources */,
+				C4F252C452FADFE0866AF42B0217837A /* Frameworks */,
+				6CB4A7E867599A3C59EE4BB34419909D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JWTDecode;
+			productName = JWTDecode;
+			productReference = 7A8D4AC02B51FD03224739D06AEE207B /* JWTDecode */;
+			productType = "com.apple.product-type.framework";
+		};
+		451DD11F450B100569A5DDFD2CF25C64 /* Pods-IoTSample-AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5A0ECE395D80C2386595E99BB8E74258 /* Build configuration list for PBXNativeTarget "Pods-IoTSample-AppTests" */;
+			buildPhases = (
+				20460FE023F5672C3E3243D1050F75FA /* Headers */,
+				466A3FFEFCD564EB93738FF515A7A61C /* Sources */,
+				6154EBAA72C2CB9B7354BD9C480E62F4 /* Frameworks */,
+				E72DF1CC3445EBDC7DEC2AEBDB358F86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				682B93FFEC5B3469FD9B00A4B4ACEDC0 /* PBXTargetDependency */,
+			);
+			name = "Pods-IoTSample-AppTests";
+			productName = Pods_IoTSample_AppTests;
+			productReference = A46C4CFA64BFD6C35FEB8DCAB5C96DC4 /* Pods-IoTSample-AppTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C642AA10FB29936669CC269F42079C6 /* AppAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2683AC046670A51F95CF2F172B6D04D0 /* Build configuration list for PBXNativeTarget "AppAuth" */;
+			buildPhases = (
+				1B27737EB4C784FB0BC35CB07BE6E3F3 /* Headers */,
+				D1281EB48BCA0EFB1A35B2F385B312AC /* Sources */,
+				2E2864E1DC6A8C54B3963477ADAAD49C /* Frameworks */,
+				15844A1B13BE6E141D835ECAC19E53FC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppAuth;
+			productName = AppAuth;
+			productReference = 3FD1B4C1246D643E9476438C28048FA8 /* AppAuth */;
+			productType = "com.apple.product-type.framework";
+		};
+		9D85386FE1A8D53D33F9D6F71B869CDC /* Pods-IoTSample-App-IoTSample-AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DEB70044FAF4ABE8DBE6D237052EEABD /* Build configuration list for PBXNativeTarget "Pods-IoTSample-App-IoTSample-AppUITests" */;
+			buildPhases = (
+				0E099344DC23AA52C3C084F59A2B45FB /* Headers */,
+				96D5C18E5ADC2334E835D73475194D25 /* Sources */,
+				43D5A46ED43BF4677C4470890DF96CA2 /* Frameworks */,
+				1485AA6839DC371771AA5741A65E0F75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C2402F7CBE50215FC64C52AA61988CE /* PBXTargetDependency */,
+				9A6644591664C7FF58B7DC059FFD23CD /* PBXTargetDependency */,
+			);
+			name = "Pods-IoTSample-App-IoTSample-AppUITests";
+			productName = Pods_IoTSample_App_IoTSample_AppUITests;
+			productReference = 9065586EC36B9B25EAC6C9754FB22F2C /* Pods-IoTSample-App-IoTSample-AppUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		C78C9D0FE1EE47963BE17C2DD799F1D7 /* Pods-IoTSample-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5377E5024F909D280B807E1A88985BE /* Build configuration list for PBXNativeTarget "Pods-IoTSample-App" */;
+			buildPhases = (
+				D80D9AC9435F869BAA5FA610F06C2769 /* Headers */,
+				5070CD8B60983F3C85602322D8F1232B /* Sources */,
+				200E813EC276887D69D5E936AD3D3613 /* Frameworks */,
+				1A8A173933112863E31BAFA71A25BB15 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B0973ECF3CBCE359AF2EB47A466ABF0 /* PBXTargetDependency */,
+				B8E74CCB515A799766E944C0715FC3A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-IoTSample-App";
+			productName = Pods_IoTSample_App;
+			productReference = 31FFB54B9B6C251AE264C644F5611BEE /* Pods-IoTSample-App */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = FA02FE707F9A88706E6080DA1B033AE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5C642AA10FB29936669CC269F42079C6 /* AppAuth */,
+				22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */,
+				C78C9D0FE1EE47963BE17C2DD799F1D7 /* Pods-IoTSample-App */,
+				9D85386FE1A8D53D33F9D6F71B869CDC /* Pods-IoTSample-App-IoTSample-AppUITests */,
+				451DD11F450B100569A5DDFD2CF25C64 /* Pods-IoTSample-AppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1485AA6839DC371771AA5741A65E0F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15844A1B13BE6E141D835ECAC19E53FC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1A8A173933112863E31BAFA71A25BB15 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CB4A7E867599A3C59EE4BB34419909D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E72DF1CC3445EBDC7DEC2AEBDB358F86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		466A3FFEFCD564EB93738FF515A7A61C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				137264A2C33A98F7A2DE66BF763D8F3B /* Pods-IoTSample-AppTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5070CD8B60983F3C85602322D8F1232B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A78D63BFF6589F8B0D1B6EF0EA040625 /* Pods-IoTSample-App-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C8653D702675B24E702BB06558DEBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3898FDAF04E5A051B43EEDC77722D379 /* A0JWT.swift in Sources */,
+				B6BFFD89E75614561BF08C0411DBDF30 /* Errors.swift in Sources */,
+				B28E515E1CD819FA77FEED02158B3E81 /* JWT.swift in Sources */,
+				00702A1720D69F63A1DDE209B77618C1 /* JWTDecode.swift in Sources */,
+				0C6DD7DB43CC9E00F9C3A1BF5FC94166 /* JWTDecode-dummy.m in Sources */,
+				377F69004EB7C350B41EF6DA3CE39946 /* TokenValidators.swift in Sources */,
+				63ECE877FA92996717F3015DE532C234 /* ValidationError.swift in Sources */,
+				7209A9F003C3CD4141448D4F8840A07E /* ValidatorJWT.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96D5C18E5ADC2334E835D73475194D25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB7C6FDC54785230E6093B4127267BC9 /* Pods-IoTSample-App-IoTSample-AppUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1281EB48BCA0EFB1A35B2F385B312AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7ED242736E87A72A90906BF8135F816 /* AppAuth-dummy.m in Sources */,
+				6F504D67E2496DCF117B8C77F3A719CB /* OIDAuthorizationRequest.m in Sources */,
+				7C7DF46BC7AA6CFBEC4A355DEE2BAEF5 /* OIDAuthorizationResponse.m in Sources */,
+				901E38B825A36E0E80AE6114D7E3E819 /* OIDAuthorizationService.m in Sources */,
+				779BFD8788721CA140D261F878BEFCF8 /* OIDAuthorizationService+IOS.m in Sources */,
+				22EDD4F40F43D8EA4DF3FFB47BF73ECA /* OIDAuthState.m in Sources */,
+				2E3B7503FDD885EF57AD41875CC6AF96 /* OIDAuthState+IOS.m in Sources */,
+				B467A9C185F4F1245AEBA2002757A3BF /* OIDClientMetadataParameters.m in Sources */,
+				0E5349F2F5424146C42FF8BFCF7A3564 /* OIDEndSessionRequest.m in Sources */,
+				A37B2509EC9B298F2FBCD5982422BF44 /* OIDEndSessionResponse.m in Sources */,
+				63980EC0F280B9E7C964F6E2A281B080 /* OIDError.m in Sources */,
+				4E645ED1670DD9C357B351E2008A9E27 /* OIDErrorUtilities.m in Sources */,
+				B392FF986CA74F5A61F253995E7279E0 /* OIDExternalUserAgentIOS.m in Sources */,
+				58765068BD398706621D225CF32EB739 /* OIDExternalUserAgentIOSCustomBrowser.m in Sources */,
+				B0C8D1BCEE62788C4B21A858907A9587 /* OIDFieldMapping.m in Sources */,
+				140AB7971E21381A99DDAE9C56BDFE29 /* OIDGrantTypes.m in Sources */,
+				B1DCE628A12DF16953CA2057F37DC45E /* OIDIDToken.m in Sources */,
+				A71B29499C8FF4B5ECD82A3A7F4C4EB5 /* OIDRegistrationRequest.m in Sources */,
+				CB0F0A6A56E57EEF111F6EA389D36462 /* OIDRegistrationResponse.m in Sources */,
+				DFC8245DF97C0A594A25877CA80085C1 /* OIDResponseTypes.m in Sources */,
+				083B6CE6AFFE0FFB097261E21D7FD12A /* OIDScopes.m in Sources */,
+				B2EA249B3056774947BB967A9EEDFE8C /* OIDScopeUtilities.m in Sources */,
+				CB7E769887199D18671DB1744A3E36D1 /* OIDServiceConfiguration.m in Sources */,
+				EC3A2694E9829836F4DF5BC091CDEC6F /* OIDServiceDiscovery.m in Sources */,
+				D2FE58D2EB9D2308E4BB396E44EA5A95 /* OIDTokenRequest.m in Sources */,
+				22B5E7765702376F6F0B685BE37BEEC3 /* OIDTokenResponse.m in Sources */,
+				AF4711A081A41CB8F27BDAA0581AD698 /* OIDTokenUtilities.m in Sources */,
+				0A4FCFA980C22C12F8CA2E380B62A7E4 /* OIDURLQueryComponent.m in Sources */,
+				FB78A6B86E74FF6BC2955152F222974F /* OIDURLSessionProvider.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B0973ECF3CBCE359AF2EB47A466ABF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppAuth;
+			target = 5C642AA10FB29936669CC269F42079C6 /* AppAuth */;
+			targetProxy = 5F193FB85A9D4CB91758BF0196D79C5D /* PBXContainerItemProxy */;
+		};
+		1C2402F7CBE50215FC64C52AA61988CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AppAuth;
+			target = 5C642AA10FB29936669CC269F42079C6 /* AppAuth */;
+			targetProxy = D60FBBDB8274E77A50099925C958EC37 /* PBXContainerItemProxy */;
+		};
+		682B93FFEC5B3469FD9B00A4B4ACEDC0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-IoTSample-App";
+			target = C78C9D0FE1EE47963BE17C2DD799F1D7 /* Pods-IoTSample-App */;
+			targetProxy = E92DD4C9308BBAB332D96D521D0B35EC /* PBXContainerItemProxy */;
+		};
+		9A6644591664C7FF58B7DC059FFD23CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JWTDecode;
+			target = 22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */;
+			targetProxy = E8CAA2E4E24A81A316DB9E113E766845 /* PBXContainerItemProxy */;
+		};
+		B8E74CCB515A799766E944C0715FC3A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JWTDecode;
+			target = 22E1F0E7CBECE226FC294E79C21B0033 /* JWTDecode */;
+			targetProxy = AFFDFD41759D9A8ACA1ABB3833F6DE1B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1582A6C83BD5183380F793AD7EDABF73 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F9589881CA54B435EC47593759A267 /* Pods-IoTSample-AppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IoTSample-AppTests/Pods-IoTSample-AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IoTSample-AppTests/Pods-IoTSample-AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		48C60B4EAC5147806DF5B0663DEC576F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C14C383E0CCA19A8D96CC04DB72D2BFD /* JWTDecode.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JWTDecode/JWTDecode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JWTDecode/JWTDecode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JWTDecode/JWTDecode.modulemap";
+				PRODUCT_MODULE_NAME = JWTDecode;
+				PRODUCT_NAME = JWTDecode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4CB2E4297E9755FACA9CEAF6C74B0F97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC07933292B1D39837C9D390102865B5 /* Pods-IoTSample-AppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IoTSample-AppTests/Pods-IoTSample-AppTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IoTSample-AppTests/Pods-IoTSample-AppTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E664955EF4B7D89E47005141769B80A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78751894F2E88ED14A172B60A93EB7C8 /* JWTDecode.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JWTDecode/JWTDecode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JWTDecode/JWTDecode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JWTDecode/JWTDecode.modulemap";
+				PRODUCT_MODULE_NAME = JWTDecode;
+				PRODUCT_NAME = JWTDecode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F9F3700A4576244825F37A4077EDB7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A5D46D3FFC73CCD46AD6823DA16DF14C /* AppAuth.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppAuth/AppAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AppAuth/AppAuth.modulemap";
+				PRODUCT_MODULE_NAME = AppAuth;
+				PRODUCT_NAME = AppAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9728C51D74E4FB11E287F5D3A12BE36E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8D120E9655B584F36F902581E5E355E /* Pods-IoTSample-App-IoTSample-AppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IoTSample-App-IoTSample-AppUITests/Pods-IoTSample-App-IoTSample-AppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IoTSample-App-IoTSample-AppUITests/Pods-IoTSample-App-IoTSample-AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADC8534D0CCE8DC47F2C0AA19D20A0F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34B3F28597FCD90069EE283C8D4A8E8B /* AppAuth.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AppAuth/AppAuth-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AppAuth/AppAuth-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AppAuth/AppAuth.modulemap";
+				PRODUCT_MODULE_NAME = AppAuth;
+				PRODUCT_NAME = AppAuth;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B9B9AFE17FF2BCB5A68B566C1B6B954F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E729FFD5B73F0A00F67FB28953F7AD0 /* Pods-IoTSample-App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IoTSample-App/Pods-IoTSample-App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IoTSample-App/Pods-IoTSample-App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E368D4D0A5DCC4AF5F4BE9BD8AD2E34A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C321D7D125C4944A5A6E1D3DB3C38E92 /* Pods-IoTSample-App-IoTSample-AppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IoTSample-App-IoTSample-AppUITests/Pods-IoTSample-App-IoTSample-AppUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IoTSample-App-IoTSample-AppUITests/Pods-IoTSample-App-IoTSample-AppUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAF0B6776762E23A722FB5AABFDAB1EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2A5FD60BE2C817BC479CE826EF21080 /* Pods-IoTSample-App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-IoTSample-App/Pods-IoTSample-App-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-IoTSample-App/Pods-IoTSample-App.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2683AC046670A51F95CF2F172B6D04D0 /* Build configuration list for PBXNativeTarget "AppAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADC8534D0CCE8DC47F2C0AA19D20A0F6 /* Debug */,
+				8F9F3700A4576244825F37A4077EDB7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D548CEC39892FEC5D6A1C2D3AF329C1 /* Build configuration list for PBXNativeTarget "JWTDecode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E664955EF4B7D89E47005141769B80A /* Debug */,
+				48C60B4EAC5147806DF5B0663DEC576F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC01E0B73776AF6B58DC318A9BE988D7 /* Debug */,
+				C605C363CC9F26F9FF97DBB1D5C6E25C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5A0ECE395D80C2386595E99BB8E74258 /* Build configuration list for PBXNativeTarget "Pods-IoTSample-AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CB2E4297E9755FACA9CEAF6C74B0F97 /* Debug */,
+				1582A6C83BD5183380F793AD7EDABF73 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5377E5024F909D280B807E1A88985BE /* Build configuration list for PBXNativeTarget "Pods-IoTSample-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B9AFE17FF2BCB5A68B566C1B6B954F /* Debug */,
+				FAF0B6776762E23A722FB5AABFDAB1EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DEB70044FAF4ABE8DBE6D237052EEABD /* Build configuration list for PBXNativeTarget "Pods-IoTSample-App-IoTSample-AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9728C51D74E4FB11E287F5D3A12BE36E /* Debug */,
+				E368D4D0A5DCC4AF5F4BE9BD8AD2E34A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
